@@ -1,0 +1,93 @@
+﻿@model ModelEF.Model.Product
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section Header{
+    <i class="fa fa-save">&nbsp;</i>
+    Xem chi tiết sản phẩm
+}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card shadow">
+            <div class="card-body">
+                <div>
+                    <dl class="dl-horizontal">
+                        <dt>
+                          Id sản phẩm
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.ID)
+                        </dd>
+                        <dt>
+                            Tên sản phẩm
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                        <dt>
+                            Đơn giá
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.UnitCost)
+                        </dd>
+
+                        <dt>
+                            Chất lượng
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Quantity)
+                        </dd>
+
+                        <dt>
+                           Hình ảnh
+                        </dt>
+
+                        <dd>
+                            <img src=" @Html.DisplayFor(model => model.Image)" style="height: 200px;" />
+
+                        </dd>
+
+                        <dt>
+                            Miêu tả
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Description)
+                        </dd>
+
+                        <dt>
+                           Trạng thái
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Status)
+                        </dd>
+
+                        <dt>
+                            Tên danh mục
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Category.Name)
+                        </dd>
+
+                    </dl>
+                </div>
+                <hr />
+                <p>
+                    @Html.ActionLink("Sửa", "Edit", new { id = Model.ID }, new { @class = "btn btn-success mr-3" })
+                    @Html.ActionLink("Quay lại", "Index", null, new { @class = "btn btn-back" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mt-5 col-lg-12" style="background: #F8F9FC"></div>
+

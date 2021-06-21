@@ -1,0 +1,93 @@
+﻿@model TestUngDung.Areas.Admin.Models.LoginModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Trang Đăng Nhập</title>
+    <link rel="stylesheet" href="~/Areas/Assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/Areas/Assets/css/owl.carousel.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Areas/Assets/css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="~/Areas/Assets/css/style.css">
+    <title>Login #7</title>
+</head>
+
+<body>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="form-signin">
+                @using (Html.BeginForm())
+                {
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="~/Areas/Assets/images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 contents">
+                            <div class="row justify-content-center">
+
+                                <div class="col-md-8">
+                                    <div class="mb-4">
+                                        <h3>Trang Đăng Nhập</h3>
+                                        <p class="mb-4">Mời bạn đăng nhập vào tài khoản.</p>
+                                        @Html.AntiForgeryToken()
+                                        @Html.ValidationSummary(true, null, new { @class = "alert alert-danger" })
+                                    </div>
+
+                                    <div class="form-group first">
+                                        @Html.TextBoxFor(model => model.username, new { @class = "form-control", @placeholder = "Mời bạn nhập tài khoản", @autofocus = "autofocus" })
+
+                                    </div>
+                                    <div class="form-group last mb-4">
+                                        @Html.TextBoxFor(model => model.password, new { @class = "form-control", @placeholder = "Mời bạn nhập mật khẩu", @type = "password" })
+
+                                    </div>
+
+                                    <div class="d-flex mb-5 align-items-center">
+                                        <label class="control control--checkbox mb-0">
+                                            <span class="caption">Nhớ mật khẩu</span>
+                                            <input type="checkbox" checked="checked" />
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <span class="ml-auto"><a href="#" class="forgot-pass">Quên mật khẩu</a></span>
+                                    </div>
+                                    <input type="submit" value="Log In" class="btn btn-block btn-primary">
+                                    <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
+
+                                    <div class="social-login">
+                                        <a href="#" class="facebook">
+                                            <span class="icon-facebook mr-3"></span>
+                                        </a>
+                                        <a href="#" class="twitter">
+                                            <span class="icon-twitter mr-3"></span>
+                                        </a>
+                                        <a href="#" class="google">
+                                            <span class="icon-google mr-3"></span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+  
+    <script src="~/Areas/Assets/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Areas/Assets/js/popper.min.js"></script>
+    <script src="~/Areas/Assets/bootstrap.min.js"></script>
+    <script src="~/Areas/Assets/js/main.js"></script>
+</body>
+
+</html>

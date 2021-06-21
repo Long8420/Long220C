@@ -1,0 +1,12 @@
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\bin\Debug\ModelEF.dll.config
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\bin\Debug\ModelEF.dll
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\bin\Debug\ModelEF.pdb
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\bin\Debug\EntityFramework.dll
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\bin\Debug\EntityFramework.SqlServer.dll
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\bin\Debug\EntityFramework.xml
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\bin\Debug\EntityFramework.SqlServer.xml
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\obj\Debug\ModelEF.csprojAssemblyReference.cache
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\obj\Debug\ModelEF.csproj.CoreCompileInputs.cache
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\obj\Debug\ModelEF.csproj.CopyComplete
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\obj\Debug\ModelEF.dll
+G:\Dai_Hoc\C#\BTCK\NguyenHuynhPhiLong\ModelEF\obj\Debug\ModelEF.pdb
